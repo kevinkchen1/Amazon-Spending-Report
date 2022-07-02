@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-info = pd.read_csv('report.csv')
+info = pd.read_csv('reports.csv')
 info = info.fillna(0)
 info['Total Charged'] = info['Total Charged'].str.replace('$','').astype(float)
 total = info['Total Charged'].sum()
